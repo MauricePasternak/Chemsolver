@@ -65,14 +65,16 @@ class MyChemistryApp(QMainWindow):
         """
         Updates the right side of the application with the new givens once a particular equation is selected
         """
+        print("Updating right side")
         self.clear_rightside()
-        for variable in self.eqn_data[self.cmb_sections.currentText()][selected_eqn]:
-            label, le = self.create_label_lineedit_pair(var_name=variable)
-            self.labels.append(label)
-            self.les.append(le)
-            self.formlay_eqns.addRow(label, le)
-
-        print(self.lst_eqns.currentItem().text())
+        try:
+            for variable in self.eqn_data[self.cmb_sections.currentText()][selected_eqn]:
+                label, le = self.create_label_lineedit_pair(var_name=variable)
+                self.labels.append(label)
+                self.les.append(le)
+                self.formlay_eqns.addRow(label, le)
+        except KeyError:  # Happens during an area switch when an equation was already selected
+            pass
 
     def clear_rightside(self):
         """
