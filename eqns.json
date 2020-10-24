@@ -1,281 +1,293 @@
 {
- "Energy - Wavelength Equation": {
-  "E": "c*h/lamb",
-  "h": "E*lamb/c",
-  "c": "E*lamb/h",
-  "lamb": "c*h/E"
- },
- "Heisenberg Uncertainty Equation": {
-  "dx": "0.0795774715459477*h/dp",
-  "dp": "0.0795774715459477*h/dx",
-  "h": "12.5663706143592*dp*dx"
- },
- "DeBroglie Equation": {
-  "lamb": "h/(m*v)",
-  "h": "lamb*m*v",
-  "m": "h/(lamb*v)",
-  "v": "h/(lamb*m)"
- },
- "Energy of an Electron at Particular Level": {
-  "E": "-Rh/n**2",
-  "Rh": "-E*n**2",
-  "n": "(-Rh/E)**0.5"
- },
- "Rydberg Equation - Wavelength": {
-  "lamb": "nf**2*ni**2/(Rh*(nf**2 - ni**2))",
-  "Rh": "nf**2*ni**2/(lamb*(nf**2 - ni**2))",
-  "ni": "-nf*(Rh*lamb/(Rh*lamb + nf**2)**0.5)",
-  "nf": "-ni*(Rh*lamb/(Rh*lamb - ni**2)**0.5)"
- },
- "Rydberg Equation - Energy": {
-  "E": "Rh/ni**2 - Rh/nf**2",
-  "Rh": "E*nf**2*ni**2/(nf**2 - ni**2)",
-  "ni": "nf*(Rh/(E*nf**2 + Rh)**0.5)",
-  "nf": "ni*(-Rh/(E*ni**2 - Rh)**0.5)"
- },
- "Ideal Gas Law - standard": {
-  "P": "R*T*n/V",
-  "V": "R*T*n/P",
-  "n": "P*V/(R*T)",
-  "R": "P*V/(T*n)",
-  "T": "P*V/(R*n)"
- },
- "Ideal Gas Law - Mass and Molar Mass": {
-  "P": "R*T*m/(M*V)",
-  "V": "R*T*m/(M*P)",
-  "m": "M*P*V/(R*T)",
-  "M": "R*T*m/(P*V)",
-  "R": "M*P*V/(T*m)",
-  "T": "M*P*V/(R*m)"
- },
- "Real Gas Law": {
-  "P": "n*(R*T*V**2 - V*a*n + a*b*n**2)/(V**2*(V - b*n))",
-  "V": "-(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)/(3*(sqrt(-4*(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)**3 + (-27*a*b*n**3/P - 9*a*n**2*(-P*b*n - R*T*n)/P**2 + 2*(-P*b*n - R*T*n)**3/P**3)**2)/2 - 27*a*b*n**3/(2*P) - 9*a*n**2*(-P*b*n - R*T*n)/(2*P**2) + (-P*b*n - R*T*n)**3/P**3)**(1/3)) - (sqrt(-4*(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)**3 + (-27*a*b*n**3/P - 9*a*n**2*(-P*b*n - R*T*n)/P**2 + 2*(-P*b*n - R*T*n)**3/P**3)**2)/2 - 27*a*b*n**3/(2*P) - 9*a*n**2*(-P*b*n - R*T*n)/(2*P**2) + (-P*b*n - R*T*n)**3/P**3)**(1/3)/3 - (-P*b*n - R*T*n)/(3*P)",
-  "n": "V/(3*b) - (V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))/(3*(-27*P*V**3/(2*a*b) - V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(2*a*b**2) + sqrt(-4*(V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))**3 + (-27*P*V**3/(a*b) - 2*V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(a*b**2))**2)/2)**(1/3)) - (-27*P*V**3/(2*a*b) - V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(2*a*b**2) + sqrt(-4*(V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))**3 + (-27*P*V**3/(a*b) - 2*V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(a*b**2))**2)/2)**(1/3)/3",
-  "R": "P*V/(T*n) - P*b/T + a*n/(T*V) - a*b*n**2/(T*V**2)",
-  "T": "P*V/(R*n) - P*b/R + a*n/(R*V) - a*b*n**2/(R*V**2)",
-  "a": "V**2*(-P*V + P*b*n + R*T*n)/(n**2*(V - b*n))",
-  "b": "V*(P*V**2 - R*T*V*n + a*n**2)/(n*(P*V**2 + a*n**2))"
- },
- "Grahams Law": {
-  "r1": "sqrt(M2)*r2/sqrt(M1)",
-  "r2": "sqrt(M1)*r1/sqrt(M2)",
-  "M1": "M2*r2**2/r1**2",
-  "M2": "M1*r1**2/r2**2"
- },
- "RMS Particle Velocity": {
-  "v": "(3)**0.5*(R*T/M)**0.5",
-  "R": "M*v**2/(3*T)",
-  "T": "M*v**2/(3*R)",
-  "M": "3*R*T/v**2"
- },
- "Kinetic Energy Equation": {
-  "KE": "0.5*m*v**2",
-  "m": "2.0*KE/v**2",
-  "v": "-1.4142135623731*(KE/m)**0.5"
- },
- "Entropy for an Isothermal Rxn - Changing Pressure": {
-  "P1": "P2*exp(H*(T1 - T2)/(R*T1*T2))",
-  "P2": "P1*exp(-H*(T1 - T2)/(R*T1*T2))",
-  "H": "-R*T1*T2*log(P2/P1)/(T1 - T2)",
-  "R": "H*(-T1 + T2)/(T1*T2*log(P2/P1))",
-  "T1": "H*T2/(H + R*T2*log(P2/P1))",
-  "T2": "H*T1/(H - R*T1*log(P2/P1))"
- },
- "Entropy for an Isothermal Rxn - Changing Volume": {
-  "S": "R*n*log(V2/V1)",
-  "n": "S/(R*log(V2/V1))",
-  "R": "S/(n*log(V2/V1))",
-  "V2": "V1*exp(S/(R*n))",
-  "V1": "V2*exp(-S/(R*n))"
- },
- "Entropy for an Isobaric Rxn - Changing Temp": {
-  "S": "c*m*log(T2/T1)",
-  "m": "S/(c*log(T2/T1))",
-  "c": "S/(m*log(T2/T1))",
-  "T2": "T1*exp(S/(c*m))",
-  "T1": "T2*exp(-S/(c*m))"
- },
- "Entropy from Microstates": {
-  "S": "kb*log(states)",
-  "kb": "S/log(states)",
-  "states": "exp(S/kb)"
- },
- "Gibb's Free Energy - Rxn Quotient": {
-  "G": "G_not + R*T*log(Q)",
-  "G_not": "G - R*T*log(Q)",
-  "R": "(G - G_not)/(T*log(Q))",
-  "T": "(G - G_not)/(R*log(Q))",
-  "Q": "exp((G - G_not)/(R*T))"
- },
- "Gibb's Free Energy - Keq Constant": {
-  "G_0": "-R*T*log(K)",
-  "R": "-G_0/(T*log(K))",
-  "T": "-G_0/(R*log(K))",
-  "K": "exp(-G_0/(R*T))"
- },
- "Gibb's Free Energy - Quotient vs Keq": {
-  "G": "R*T*(-log(Keq) + log(Q))",
-  "R": "-G/(T*(log(Keq) - log(Q)))",
-  "T": "-G/(R*(log(Keq) - log(Q)))",
-  "Q": "Keq*exp(G/(R*T))",
-  "Keq": "Q*exp(-G/(R*T))"
- },
- "Gibb's Free Energy - Enthalpy and Entropy": {
-  "G": "H - S*T",
-  "H": "G + S*T",
-  "T": "(-G + H)/S",
-  "S": "(-G + H)/T"
- },
- "Calorimetry - Heat from Temp Change": {
-  "q": "c*m*(Tf - Ti)",
-  "m": "q/(c*(Tf - Ti))",
-  "c": "q/(m*(Tf - Ti))",
-  "Ti": "Tf - q/(c*m)",
-  "Tf": "Ti + q/(c*m)"
- },
- "Calorimetry - Heat from Enthalpy": {
-  "q": "H*n",
-  "n": "q/H",
-  "H": "q/n"
- },
- "Hess's Law - Heats of Formation": {
-  "H_rxn": "-Hf_A*moles_a - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d",
-  "moles_a": "(-H_rxn - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d)/Hf_A",
-  "Hf_A": "(-H_rxn - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d)/moles_a",
-  "moles_b": "(-H_rxn - Hf_A*moles_a + Hf_C*moles_c + Hf_D*moles_d)/Hf_B",
-  "Hf_B": "(-H_rxn - Hf_A*moles_a + Hf_C*moles_c + Hf_D*moles_d)/moles_b",
-  "moles_c": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_D*moles_d)/Hf_C",
-  "Hf_C": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_D*moles_d)/moles_c",
-  "moles_d": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_C*moles_c)/Hf_D",
-  "Hf_D": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_C*moles_c)/moles_d"
- },
- "Dilution Equation": {
-  "ci": "cf*vf/vi",
-  "vi": "cf*vf/ci",
-  "cf": "ci*vi/vf",
-  "vf": "ci*vi/cf"
- },
- "Keq of a Reaction: aA + bB <--> cC + dD": {
-  "A": "(B**(-b)*C**c*D**d/Keq)**(1/a)",
-  "B": "(A**(-a)*C**c*D**d/Keq)**(1/b)",
-  "C": "(A**a*B**b*D**(-d)*Keq)**(1/c)",
-  "D": "(A**a*B**b*C**(-c)*Keq)**(1/d)",
-  "a": "log(B**(-b)*C**c*D**d/Keq)/log(A)",
-  "b": "log(A**(-a)*C**c*D**d/Keq)/log(B)",
-  "c": "log(A**a*B**b*D**(-d)*Keq)/log(C)",
-  "d": "log(A**a*B**b*C**(-c)*Keq)/log(D)",
-  "Keq": "A**(-a)*B**(-b)*C**c*D**d"
- },
- "Kp - Kc Conversation": {
-  "Kp": "Kc*(R*T)**n",
-  "Kc": "Kp*(R*T)**(-n)",
-  "R": "(Kp/Kc)**(1/n)/T",
-  "T": "(Kp/Kc)**(1/n)/R",
-  "n": "log(Kp/Kc)/log(R*T)"
- },
- "Molar Solubility in Water for AB --> aA + bB": {
-  "a": "exp(LambertW(molar_sol*log(Ksp*(b*molar_sol)**(-b))))/molar_sol",
-  "b": "exp(LambertW(molar_sol*log(Ksp*(a*molar_sol)**(-a))))/molar_sol",
-  "Ksp": "(a*molar_sol)**a*(b*molar_sol)**b",
-  "molar_sol": "(Ksp*a**(-a)*b**(-b))**(1/(a + b))"
- },
- "Van't Hoff Equation - Single Keq": {
-  "Keq": "exp((-H + S*T)/(R*T))",
-  "H": "T*(-R*log(Keq) + S)",
-  "R": "(-H + S*T)/(T*log(Keq))",
-  "T": "-H/(R*log(Keq) - S)",
-  "S": "H/T + R*log(Keq)"
- },
- "Van't Hoff Equation - Two Keq": {
-  "K2": "K1*exp(-H*(T1 - T2)/(R*T1*T2))",
-  "K1": "K2*exp(H*(T1 - T2)/(R*T1*T2))",
-  "H": "-R*T1*T2*log(K2/K1)/(T1 - T2)",
-  "R": "H*(-T1 + T2)/(T1*T2*log(K2/K1))",
-  "T2": "H*T1/(H - R*T1*log(K2/K1))",
-  "T1": "H*T2/(H + R*T2*log(K2/K1))"
- },
- "Henderson Hasselbach - pKa": {
-  "pH": "pKa + log(B/A)/log(10)",
-  "pKa": "pH - log(B/A)/log(10)",
-  "B": "A*exp((pH - pKa)*log(10))",
-  "A": "B*exp(-(pH - pKa)*log(10))"
- },
- "Henderson Hasselbach - pKb": {
-  "pOH": "pKb + log(A/B)/log(10)",
-  "pKb": "pOH - log(A/B)/log(10)",
-  "A": "B*exp(-(pKb - pOH)*log(10))",
-  "B": "A*exp((pKb - pOH)*log(10))"
- },
- "Average Rate of a Reactant": {
-  "r": "(A1 - A2)/(t1 - t2)",
-  "t2": "(-A1 + A2 + r*t1)/r",
-  "t1": "(A1 - A2 + r*t2)/r",
-  "A2": "A1 - r*t1 + r*t2",
-  "A1": "A2 + r*t1 - r*t2"
- },
- "Order of Reactant from Initial Rates": {
-  "order": "log(r2/r1)/log(conc2/conc1)",
-  "r2": "r1*exp(order*log(conc2/conc1))",
-  "r1": "r2*exp(-order*log(conc2/conc1))",
-  "conc2": "conc1*exp(log(r2/r1)/order)",
-  "conc1": "conc2*exp(-log(r2/r1)/order)"
- },
- "Main Rate Law": {
-  "r": "A**m*B**n*k",
-  "k": "A**(-m)*B**(-n)*r",
-  "A": "(B**(-n)*r/k)**(1/m)",
-  "m": "log(B**(-n)*r/k)/log(A)",
-  "B": "(A**(-m)*r/k)**(1/n)",
-  "n": "log(A**(-m)*r/k)/log(B)"
- },
- "0th Order Integrated Rate Law": {
-  "At": "Ao - k*t",
-  "k": "(Ao - At)/t",
-  "t": "(Ao - At)/k",
-  "Ao": "At + k*t"
- },
- "1st Order Integrated Rate Law": {
-  "At": "Ao*exp(-k*t)",
-  "k": "(log(Ao) - log(At))/t",
-  "t": "(log(Ao) - log(At))/k",
-  "Ao": "At*exp(k*t)"
- },
- "2nd Order Integrated Rate Law": {
-  "At": "Ao/(Ao*k*t + 1)",
-  "k": "(Ao - At)/(Ao*At*t)",
-  "t": "(Ao - At)/(Ao*At*k)",
-  "Ao": "-At/(At*k*t - 1)"
- },
- "Arrhenius Equation": {
-  "k": "A*exp(-Ea/(R*T))",
-  "A": "k*exp(Ea/(R*T))",
-  "Ea": "R*T*(log(A) - log(k))",
-  "R": "Ea/(T*(log(A) - log(k)))",
-  "T": "Ea/(R*(log(A) - log(k)))"
- },
- "Rate Constant from changing Temp": {
-  "ki": "kf*exp(-Ea*(Tf - Ti)/(R*Tf*Ti))",
-  "kf": "ki*exp(Ea*(Tf - Ti)/(R*Tf*Ti))",
-  "Ea": "R*Tf*Ti*log(kf/ki)/(Tf - Ti)",
-  "R": "Ea*(Tf - Ti)/(Tf*Ti*log(kf/ki))",
-  "Ti": "Ea*Tf/(Ea + R*Tf*log(kf/ki))",
-  "Tf": "Ea*Ti/(Ea - R*Ti*log(kf/ki))"
- },
- "Nernst Equation": {
-  "Ecell": "Ecell_0 - R*T*log(Q)/(F*n)",
-  "Ecell_0": "Ecell + R*T*log(Q)/(F*n)",
-  "R": "F*n*(-Ecell + Ecell_0)/(T*log(Q))",
-  "T": "F*n*(-Ecell + Ecell_0)/(R*log(Q))",
-  "n": "-R*T*log(Q)/(F*(Ecell - Ecell_0))",
-  "F": "-R*T*log(Q)/(n*(Ecell - Ecell_0))",
-  "Q": "exp(-F*n*(Ecell - Ecell_0)/(R*T))"
- },
- "Electroplating Relationship": {
-  "n_atom": "I*t/(F*n_elec)",
-  "n_elec": "I*t/(F*n_atom)",
-  "I": "F*n_atom*n_elec/t",
-  "t": "F*n_atom*n_elec/I",
-  "F": "I*t/(n_atom*n_elec)"
- }
+   "Quantum": {
+      "Energy - Wavelength Equation": {
+         "E": "c*h/lamb",
+         "h": "E*lamb/c",
+         "c": "E*lamb/h",
+         "lamb": "c*h/E"
+      },
+      "Heisenberg Uncertainty Equation": {
+         "dx": "0.0795774715459477*h/dp",
+         "dp": "0.0795774715459477*h/dx",
+         "h": "12.5663706143592*dp*dx"
+      },
+      "DeBroglie Equation": {
+         "lamb": "h/(m*v)",
+         "h": "lamb*m*v",
+         "m": "h/(lamb*v)",
+         "v": "h/(lamb*m)"
+      },
+      "Energy of an Electron at Particular Level": {
+         "E": "-Rh/n**2",
+         "Rh": "-E*n**2",
+         "n": "(-Rh/E)**0.5"
+      },
+      "Rydberg Equation - Wavelength": {
+         "lamb": "nf**2*ni**2/(Rh*(nf**2 - ni**2))",
+         "Rh": "nf**2*ni**2/(lamb*(nf**2 - ni**2))",
+         "ni": "-nf*(Rh*lamb/(Rh*lamb + nf**2)**0.5)",
+         "nf": "-ni*(Rh*lamb/(Rh*lamb - ni**2)**0.5)"
+      },
+      "Rydberg Equation - Energy": {
+         "E": "Rh/ni**2 - Rh/nf**2",
+         "Rh": "E*nf**2*ni**2/(nf**2 - ni**2)",
+         "ni": "nf*(Rh/(E*nf**2 + Rh)**0.5)",
+         "nf": "ni*(-Rh/(E*ni**2 - Rh)**0.5)"
+      }
+   },
+   "Gas Laws": {
+      "Ideal Gas Law - standard": {
+         "P": "R*T*n/V",
+         "V": "R*T*n/P",
+         "n": "P*V/(R*T)",
+         "R": "P*V/(T*n)",
+         "T": "P*V/(R*n)"
+      },
+      "Ideal Gas Law - Mass and Molar Mass": {
+         "P": "R*T*m/(M*V)",
+         "V": "R*T*m/(M*P)",
+         "m": "M*P*V/(R*T)",
+         "M": "R*T*m/(P*V)",
+         "R": "M*P*V/(T*m)",
+         "T": "M*P*V/(R*m)"
+      },
+      "Real Gas Law": {
+         "P": "n*(R*T*V**2 - V*a*n + a*b*n**2)/(V**2*(V - b*n))",
+         "V": "-(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)/(3*(sqrt(-4*(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)**3 + (-27*a*b*n**3/P - 9*a*n**2*(-P*b*n - R*T*n)/P**2 + 2*(-P*b*n - R*T*n)**3/P**3)**2)/2 - 27*a*b*n**3/(2*P) - 9*a*n**2*(-P*b*n - R*T*n)/(2*P**2) + (-P*b*n - R*T*n)**3/P**3)**(1/3)) - (sqrt(-4*(-3*a*n**2/P + (-P*b*n - R*T*n)**2/P**2)**3 + (-27*a*b*n**3/P - 9*a*n**2*(-P*b*n - R*T*n)/P**2 + 2*(-P*b*n - R*T*n)**3/P**3)**2)/2 - 27*a*b*n**3/(2*P) - 9*a*n**2*(-P*b*n - R*T*n)/(2*P**2) + (-P*b*n - R*T*n)**3/P**3)**(1/3)/3 - (-P*b*n - R*T*n)/(3*P)",
+         "n": "V/(3*b) - (V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))/(3*(-27*P*V**3/(2*a*b) - V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(2*a*b**2) + sqrt(-4*(V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))**3 + (-27*P*V**3/(a*b) - 2*V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(a*b**2))**2)/2)**(1/3)) - (-27*P*V**3/(2*a*b) - V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(2*a*b**2) + sqrt(-4*(V**2/b**2 - 3*(P*V**2*b + R*T*V**2)/(a*b))**3 + (-27*P*V**3/(a*b) - 2*V**3/b**3 + 9*V*(P*V**2*b + R*T*V**2)/(a*b**2))**2)/2)**(1/3)/3",
+         "R": "P*V/(T*n) - P*b/T + a*n/(T*V) - a*b*n**2/(T*V**2)",
+         "T": "P*V/(R*n) - P*b/R + a*n/(R*V) - a*b*n**2/(R*V**2)",
+         "a": "V**2*(-P*V + P*b*n + R*T*n)/(n**2*(V - b*n))",
+         "b": "V*(P*V**2 - R*T*V*n + a*n**2)/(n*(P*V**2 + a*n**2))"
+      },
+      "Grahams Law": {
+         "r1": "sqrt(M2)*r2/sqrt(M1)",
+         "r2": "sqrt(M1)*r1/sqrt(M2)",
+         "M1": "M2*r2**2/r1**2",
+         "M2": "M1*r1**2/r2**2"
+      },
+      "RMS Particle Velocity": {
+         "v": "(3)**0.5*(R*T/M)**0.5",
+         "R": "M*v**2/(3*T)",
+         "T": "M*v**2/(3*R)",
+         "M": "3*R*T/v**2"
+      },
+      "Kinetic Energy Equation": {
+         "KE": "0.5*m*v**2",
+         "m": "2.0*KE/v**2",
+         "v": "-1.4142135623731*(KE/m)**0.5"
+      }
+   },
+   "Thermodynamics": {
+      "Entropy for an Isothermal Rxn - Changing Pressure": {
+         "P1": "P2*exp(H*(T1 - T2)/(R*T1*T2))",
+         "P2": "P1*exp(-H*(T1 - T2)/(R*T1*T2))",
+         "H": "-R*T1*T2*log(P2/P1)/(T1 - T2)",
+         "R": "H*(-T1 + T2)/(T1*T2*log(P2/P1))",
+         "T1": "H*T2/(H + R*T2*log(P2/P1))",
+         "T2": "H*T1/(H - R*T1*log(P2/P1))"
+      },
+      "Entropy for an Isothermal Rxn - Changing Volume": {
+         "S": "R*n*log(V2/V1)",
+         "n": "S/(R*log(V2/V1))",
+         "R": "S/(n*log(V2/V1))",
+         "V2": "V1*exp(S/(R*n))",
+         "V1": "V2*exp(-S/(R*n))"
+      },
+      "Entropy for an Isobaric Rxn - Changing Temp": {
+         "S": "c*m*log(T2/T1)",
+         "m": "S/(c*log(T2/T1))",
+         "c": "S/(m*log(T2/T1))",
+         "T2": "T1*exp(S/(c*m))",
+         "T1": "T2*exp(-S/(c*m))"
+      },
+      "Entropy from Microstates": {
+         "S": "kb*log(states)",
+         "kb": "S/log(states)",
+         "states": "exp(S/kb)"
+      },
+      "Gibb's Free Energy - Rxn Quotient": {
+         "G": "G_not + R*T*log(Q)",
+         "G_not": "G - R*T*log(Q)",
+         "R": "(G - G_not)/(T*log(Q))",
+         "T": "(G - G_not)/(R*log(Q))",
+         "Q": "exp((G - G_not)/(R*T))"
+      },
+      "Gibb's Free Energy - Keq Constant": {
+         "G_0": "-R*T*log(K)",
+         "R": "-G_0/(T*log(K))",
+         "T": "-G_0/(R*log(K))",
+         "K": "exp(-G_0/(R*T))"
+      },
+      "Gibb's Free Energy - Quotient vs Keq": {
+         "G": "R*T*(-log(Keq) + log(Q))",
+         "R": "-G/(T*(log(Keq) - log(Q)))",
+         "T": "-G/(R*(log(Keq) - log(Q)))",
+         "Q": "Keq*exp(G/(R*T))",
+         "Keq": "Q*exp(-G/(R*T))"
+      },
+      "Gibb's Free Energy - Enthalpy and Entropy": {
+         "G": "H - S*T",
+         "H": "G + S*T",
+         "T": "(-G + H)/S",
+         "S": "(-G + H)/T"
+      },
+      "Calorimetry - Heat from Temp Change": {
+         "q": "c*m*(Tf - Ti)",
+         "m": "q/(c*(Tf - Ti))",
+         "c": "q/(m*(Tf - Ti))",
+         "Ti": "Tf - q/(c*m)",
+         "Tf": "Ti + q/(c*m)"
+      },
+      "Calorimetry - Heat from Enthalpy": {
+         "q": "H*n",
+         "n": "q/H",
+         "H": "q/n"
+      },
+      "Hess's Law - Heats of Formation": {
+         "H_rxn": "-Hf_A*moles_a - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d",
+         "moles_a": "(-H_rxn - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d)/Hf_A",
+         "Hf_A": "(-H_rxn - Hf_B*moles_b + Hf_C*moles_c + Hf_D*moles_d)/moles_a",
+         "moles_b": "(-H_rxn - Hf_A*moles_a + Hf_C*moles_c + Hf_D*moles_d)/Hf_B",
+         "Hf_B": "(-H_rxn - Hf_A*moles_a + Hf_C*moles_c + Hf_D*moles_d)/moles_b",
+         "moles_c": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_D*moles_d)/Hf_C",
+         "Hf_C": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_D*moles_d)/moles_c",
+         "moles_d": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_C*moles_c)/Hf_D",
+         "Hf_D": "(H_rxn + Hf_A*moles_a + Hf_B*moles_b - Hf_C*moles_c)/moles_d"
+      }
+   },
+   "Equilibrium & Solutions": {
+      "Dilution Equation": {
+         "ci": "cf*vf/vi",
+         "vi": "cf*vf/ci",
+         "cf": "ci*vi/vf",
+         "vf": "ci*vi/cf"
+      },
+      "Keq of a Reaction: aA + bB <--> cC + dD": {
+         "A": "(B**(-b)*C**c*D**d/Keq)**(1/a)",
+         "B": "(A**(-a)*C**c*D**d/Keq)**(1/b)",
+         "C": "(A**a*B**b*D**(-d)*Keq)**(1/c)",
+         "D": "(A**a*B**b*C**(-c)*Keq)**(1/d)",
+         "a": "log(B**(-b)*C**c*D**d/Keq)/log(A)",
+         "b": "log(A**(-a)*C**c*D**d/Keq)/log(B)",
+         "c": "log(A**a*B**b*D**(-d)*Keq)/log(C)",
+         "d": "log(A**a*B**b*C**(-c)*Keq)/log(D)",
+         "Keq": "A**(-a)*B**(-b)*C**c*D**d"
+      },
+      "Kp - Kc Conversation": {
+         "Kp": "Kc*(R*T)**n",
+         "Kc": "Kp*(R*T)**(-n)",
+         "R": "(Kp/Kc)**(1/n)/T",
+         "T": "(Kp/Kc)**(1/n)/R",
+         "n": "log(Kp/Kc)/log(R*T)"
+      },
+      "Molar Solubility in Water for AB --> aA + bB": {
+         "a": "exp(LambertW(molar_sol*log(Ksp*(b*molar_sol)**(-b))))/molar_sol",
+         "b": "exp(LambertW(molar_sol*log(Ksp*(a*molar_sol)**(-a))))/molar_sol",
+         "Ksp": "(a*molar_sol)**a*(b*molar_sol)**b",
+         "molar_sol": "(Ksp*a**(-a)*b**(-b))**(1/(a + b))"
+      },
+      "Van't Hoff Equation - Single Keq": {
+         "Keq": "exp((-H + S*T)/(R*T))",
+         "H": "T*(-R*log(Keq) + S)",
+         "R": "(-H + S*T)/(T*log(Keq))",
+         "T": "-H/(R*log(Keq) - S)",
+         "S": "H/T + R*log(Keq)"
+      },
+      "Van't Hoff Equation - Two Keq": {
+         "K2": "K1*exp(-H*(T1 - T2)/(R*T1*T2))",
+         "K1": "K2*exp(H*(T1 - T2)/(R*T1*T2))",
+         "H": "-R*T1*T2*log(K2/K1)/(T1 - T2)",
+         "R": "H*(-T1 + T2)/(T1*T2*log(K2/K1))",
+         "T2": "H*T1/(H - R*T1*log(K2/K1))",
+         "T1": "H*T2/(H + R*T2*log(K2/K1))"
+      },
+      "Henderson Hasselbach - pKa": {
+         "pH": "pKa + log(B/A)/log(10)",
+         "pKa": "pH - log(B/A)/log(10)",
+         "B": "A*exp((pH - pKa)*log(10))",
+         "A": "B*exp(-(pH - pKa)*log(10))"
+      },
+      "Henderson Hasselbach - pKb": {
+         "pOH": "pKb + log(A/B)/log(10)",
+         "pKb": "pOH - log(A/B)/log(10)",
+         "A": "B*exp(-(pKb - pOH)*log(10))",
+         "B": "A*exp((pKb - pOH)*log(10))"
+      }
+   },
+   "Kinetics": {
+      "Average Rate of a Reactant": {
+         "r": "(A1 - A2)/(t1 - t2)",
+         "t2": "(-A1 + A2 + r*t1)/r",
+         "t1": "(A1 - A2 + r*t2)/r",
+         "A2": "A1 - r*t1 + r*t2",
+         "A1": "A2 + r*t1 - r*t2"
+      },
+      "Order of Reactant from Initial Rates": {
+         "order": "log(r2/r1)/log(conc2/conc1)",
+         "r2": "r1*exp(order*log(conc2/conc1))",
+         "r1": "r2*exp(-order*log(conc2/conc1))",
+         "conc2": "conc1*exp(log(r2/r1)/order)",
+         "conc1": "conc2*exp(-log(r2/r1)/order)"
+      },
+      "Main Rate Law": {
+         "r": "A**m*B**n*k",
+         "k": "A**(-m)*B**(-n)*r",
+         "A": "(B**(-n)*r/k)**(1/m)",
+         "m": "log(B**(-n)*r/k)/log(A)",
+         "B": "(A**(-m)*r/k)**(1/n)",
+         "n": "log(A**(-m)*r/k)/log(B)"
+      },
+      "0th Order Integrated Rate Law": {
+         "At": "Ao - k*t",
+         "k": "(Ao - At)/t",
+         "t": "(Ao - At)/k",
+         "Ao": "At + k*t"
+      },
+      "1st Order Integrated Rate Law": {
+         "At": "Ao*exp(-k*t)",
+         "k": "(log(Ao) - log(At))/t",
+         "t": "(log(Ao) - log(At))/k",
+         "Ao": "At*exp(k*t)"
+      },
+      "2nd Order Integrated Rate Law": {
+         "At": "Ao/(Ao*k*t + 1)",
+         "k": "(Ao - At)/(Ao*At*t)",
+         "t": "(Ao - At)/(Ao*At*k)",
+         "Ao": "-At/(At*k*t - 1)"
+      },
+      "Arrhenius Equation": {
+         "k": "A*exp(-Ea/(R*T))",
+         "A": "k*exp(Ea/(R*T))",
+         "Ea": "R*T*(log(A) - log(k))",
+         "R": "Ea/(T*(log(A) - log(k)))",
+         "T": "Ea/(R*(log(A) - log(k)))"
+      },
+      "Rate Constant from changing Temp": {
+         "ki": "kf*exp(-Ea*(Tf - Ti)/(R*Tf*Ti))",
+         "kf": "ki*exp(Ea*(Tf - Ti)/(R*Tf*Ti))",
+         "Ea": "R*Tf*Ti*log(kf/ki)/(Tf - Ti)",
+         "R": "Ea*(Tf - Ti)/(Tf*Ti*log(kf/ki))",
+         "Ti": "Ea*Tf/(Ea + R*Tf*log(kf/ki))",
+         "Tf": "Ea*Ti/(Ea - R*Ti*log(kf/ki))"
+      }
+   },
+   "Electrochemistry": {
+      "Nernst Equation": {
+         "Ecell": "Ecell_0 - R*T*log(Q)/(F*n)",
+         "Ecell_0": "Ecell + R*T*log(Q)/(F*n)",
+         "R": "F*n*(-Ecell + Ecell_0)/(T*log(Q))",
+         "T": "F*n*(-Ecell + Ecell_0)/(R*log(Q))",
+         "n": "-R*T*log(Q)/(F*(Ecell - Ecell_0))",
+         "F": "-R*T*log(Q)/(n*(Ecell - Ecell_0))",
+         "Q": "exp(-F*n*(Ecell - Ecell_0)/(R*T))"
+      },
+      "Electroplating Relationship": {
+         "n_atom": "I*t/(F*n_elec)",
+         "n_elec": "I*t/(F*n_atom)",
+         "I": "F*n_atom*n_elec/t",
+         "t": "F*n_atom*n_elec/I",
+         "F": "I*t/(n_atom*n_elec)"
+      }
+   }
 }

@@ -143,7 +143,7 @@ class MyChemistryApp(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    with open(os.path.join(os.getcwd(), 'eqns2.json')) as f:
+    with open(os.path.join(os.getcwd(), 'eqns.json')) as f:
         eqn_data = json.load(f)
     win = MyChemistryApp(eqn_data)
     win.show()
